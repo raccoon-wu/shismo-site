@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+/* fallback support */
+  --font-anta: Anta, sans-serif;
+  --font-roboto: Roboto, sans-serif;
+}
+
+@theme {
+  --font-anta: Anta, sans-serif;
+  --font-roboto: Roboto, sans-serif;
+
+  /* general colours */
+  --color-white: oklch(1 0 0);
+  --color-black: oklch(0.173 0 0);
+
+  --color-darkGray: oklch(0.2431 0.0076 211.06);
+  --color-midGray: oklch(0.2805 0.0074 211.05);
+  --color-lightGray: oklch(0.3639 0.016 171.42);
+
+  --color-lightGreen: oklch(0.8418 0.0386 125.31);
+
+  /* accent greens */
+  --color-fluroLime: oklch(0.909 0.2389 131.11);
+  --color-midGreen: oklch(0.6945 0.1756 148.05);
+  --color-darkGreen: oklch(0.6837 0.2094 145.91);
+}
+
+/* default global styling */
+body {
+  font-family: var(--font-roboto);
+  background-color: var(--color-darkGray);
+}
